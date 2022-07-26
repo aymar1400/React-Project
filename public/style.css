@@ -1,0 +1,61 @@
+/* Universal CSS */
+
+body {
+
+}
+
+/* Top Navigation CSS */
+
+.topnav-container {
+    margin-top: 50px;
+    background-color: gray;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.topnav-h1 {
+
+}
+
+.topnav-login-link {
+    padding-right: 25px;
+    padding-left: 10px;
+}
+
+
+
+/* Main Content CSS */
+
+.main-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 25px;
+}
+
+.register-container {
+
+}
+
+.login-container {
+    
+}
+
+.main-h2 {
+    padding-top: 50px;
+    border-radius: 25px;
+    padding-left: 25px;
+}
+
+/* Footer CSS */
+
+.footer-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 100px;
+    padding-left: 100px;
+    background-color: #d88d47;
+    padding-top: 25px; 
+    margin-top: 20px;
+    padding-bottom: 25px;
+    border-radius: 20px;
+}

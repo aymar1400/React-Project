@@ -4,7 +4,12 @@ import React from 'react'
 function Footer() {
     return (
         <>
-            <h1>Footer Here</h1>
+        <div className="footer-container">
+           <a href=''>Placeholder</a>
+           <a href=''>Placeholder</a>
+           <a href=''>Placeholder</a>
+           <a href=''>Placeholder</a>
+        </div>
         </>
     )
 }
