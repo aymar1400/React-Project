@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import Axios from 'axios';
 
 function MainContent() {
 
@@ -36,6 +36,15 @@ function MainContent() {
         const localEmail = event.target.value;
     }
     
+    const addNewUser = () => {
+        console.log("test1")
+        Axios.post("http://localhost:3001/create", {
+            username: usernameReg, 
+            password: passwordReg,
+        }).then(() => {
+            console.log("success");
+        })
+    }
     
 
     // Create Simple two Form layout with Register and Login
@@ -54,7 +63,7 @@ function MainContent() {
                     <h2>Password</h2>
                     <input type="text" id="password" onChange={getPassword}/>
                     <br />
-                    <button type="submit" onClick={onSubmit}>Submit</button>
+                    <button type="submit" onClick={addNewUser}>Submit</button>
                 </main>
             </form>
             <h2 className="main-h2">Login Here</h2>
@@ -69,6 +78,9 @@ function MainContent() {
                     <button type="submit">Login</button>
                 </main>
             </form>
+            </div>
+            <div>
+                <button type="submit">Show Users</button>
             </div>
         </>
     )
